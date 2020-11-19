@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script src="./plugin/jquery/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
+        <script src="./plugin/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./plugin/highlight/github-gist.min.css">
+        <script src="./plugin/highlight/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad()</script>
+
+        
+        <link rel="stylesheet" href="./mycss.css">
+        <script src="./myjs.js"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="sql-block">
+                <h4>SQL HERE</h4>
+                <textarea id="sql-syntax" rows="1"  placeholder="SELECT * FROM Member WHERE username = '@username'" style="width:100%"></textarea>
+            </div>
+            <div class="sql-block">
+                <h4>PREVIEW</h4>
+                <pre id="sql-preview"><code class="sql">SELECT * FROM Member WHERE username = '@username'</code></pre>
+            </div>
+            <div class="sql-block">
+                <h4>AFTER INJECTION</h4>
+                <pre id="sql-result"><code class="sql">SELECT * FROM Member WHERE username = '1' OR 1=1 -- Comment'</code></pre>
+            </div>
+
+            <div class="sql-block">
+                <h4>PARAMETER SETTING</h4>
+                <table class="table table-hover table-dark">
+                    <thead>
+                        <tr>
+                        <th scope="col" style="width:5%">#</th>
+                        <th scope="col" style="width:20%">Parameter Name</th>
+                        <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="1">
+                        <th scope="row">1</th>
+                        <td><input class="param-name" type="text" placeholder="@username" style="width:100%"></td>
+                        <td><input class="param-value" type="text" placeholder="1' OR 1=1 -- Comment" style="width:100%"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+
