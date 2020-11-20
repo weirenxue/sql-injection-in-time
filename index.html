@@ -22,15 +22,15 @@
         <div class="container-fluid">
             <div class="sql-block">
                 <h4>SQL HERE</h4>
-                <textarea id="sql-syntax" rows="1"  placeholder="SELECT * FROM Member WHERE username = '@username'" style="width:100%"></textarea>
+                <textarea id="sql-syntax" rows="1"  placeholder="SELECT * FROM `Member` WHERE username = '@username'" style="width:100%"></textarea>
             </div>
             <div class="sql-block">
                 <h4>PREVIEW</h4>
-                <pre id="sql-preview"><code class="sql">SELECT * FROM Member WHERE username = '@username'</code></pre>
+                <pre id="sql-preview"><code class="sql">SELECT * FROM `Member` WHERE username = '@username'</code></pre>
             </div>
             <div class="sql-block">
                 <h4>AFTER INJECTION</h4>
-                <pre id="sql-result"><code class="sql">SELECT * FROM Member WHERE username = '1' OR 1=1 -- Comment'</code></pre>
+                <pre id="sql-result"><code class="sql">SELECT * FROM `Member` WHERE username = '1' OR 1=1 -- Comment'</code></pre>
             </div>
 
             <div class="sql-block">
