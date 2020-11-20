@@ -11,7 +11,6 @@ $(function() {
         renderCodeBlock();
     });
     
-    initCase();
 });
 
 function injection(){
