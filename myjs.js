@@ -29,12 +29,6 @@ function injection(){
     $('#sql-result').html(codeTag);
 }
 
-function initCase() {
-    console.log($('#sql-syntax').placeholder())
-
-}
-
-
 window.onload = function() {
     renderCodeBlock()
 };
