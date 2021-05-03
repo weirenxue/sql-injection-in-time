@@ -25,4 +25,37 @@ pre code {
 
 .hljs-keyword {
     color:#0086b3;
+}  
+#go-home {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+    background-color: #BE3144;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+}
+#manual {
+    position: fixed;
+    right: 0px;
+    bottom: 60px;
+    border-radius: 50%;
+    background-color: #BE3144;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+}
+a span {
+    font-size: 10px;
 }
